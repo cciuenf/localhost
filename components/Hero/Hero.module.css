@@ -1,0 +1,10 @@
+.background {
+ /* background: url("/assets/background.png") no-repeat center;*/
+  background-size: cover;
+  width: 100vw;
+  background-color: #E5E4E5;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

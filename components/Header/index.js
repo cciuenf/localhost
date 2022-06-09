@@ -40,105 +40,109 @@ export const Header = () => {
 
   return (
     <div
-      className={s.header}
-      style={{
-        padding: `${padding}px 10px`,
-        boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
-      }}
+    className={s.wrapper}
     >
-      <div className={s.logo}>
-        <a href=".">
-          <Image
-            src="/assets/logo-cc-branco.png"
-            alt="logo Ciência da Computação - UENF"
-            width={logoWidth}
-            height={logoHeight}
-          />
-        </a>
+      <div
+        className={s.header}
+        style={{
+          padding: `${padding}px 10px`,
+          boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
+        }}
+      >
+        <div className={s.logo}>
+          <a href=".">
+            <Image
+              src="/assets/logo-cc-branco.png"
+              alt="logo Ciência da Computação - UENF"
+              width={logoWidth}
+              height={logoHeight}
+            />
+          </a>
+        </div>
+        <nav className={s.nav}>
+          <ul>
+            <li>
+              <a href="">Apresentação</a>
+            </li>
+            <li className="dropdown dropdown-end dropdown-hover">
+              <a>
+                Pessoas
+                <CaretDown />
+              </a>
+              <ul
+                tabIndex="0"
+                className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
+              >
+                <li>
+                  <a className={s.dropdown_link} href="">
+                    Item 1
+                  </a>
+                </li>
+                <li href="">
+                  <a className={s.dropdown_link}>Item 2</a>
+                </li>
+              </ul>
+            </li>
+            <li className="dropdown dropdown-end dropdown-hover">
+              <a>
+                Documentos
+                <CaretDown />
+              </a>
+              <ul
+                tabIndex="0"
+                className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
+              >
+                <li>
+                  <a className={s.dropdown_link} href="">
+                    Item 1
+                  </a>
+                </li>
+                <li href="">
+                  <a className={s.dropdown_link}>Item 2</a>
+                </li>
+              </ul>
+            </li>
+            <li className="dropdown dropdown-end dropdown-hover">
+              <a>
+                Produção
+                <CaretDown />
+              </a>
+              <ul
+                tabIndex="0"
+                className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
+              >
+                <li>
+                  <a className={s.dropdown_link} href="">
+                    Item 1
+                  </a>
+                </li>
+                <li href="">
+                  <a className={s.dropdown_link}>Item 2</a>
+                </li>
+              </ul>
+            </li>
+            <li className="dropdown dropdown-end dropdown-hover">
+              <a>
+                Links Úteis
+                <CaretDown />
+              </a>
+              <ul
+                tabIndex="0"
+                className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
+              >
+                <li>
+                  <a className={s.dropdown_link} href="">
+                    Item 1
+                  </a>
+                </li>
+                <li href="">
+                  <a className={s.dropdown_link}>Item 2</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav className={s.nav}>
-        <ul>
-          <li>
-            <a href="">Apresentação</a>
-          </li>
-          <li className="dropdown dropdown-end dropdown-hover">
-            <a>
-              Pessoas
-              <CaretDown />
-            </a>
-            <ul
-              tabIndex="0"
-              className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
-            >
-              <li>
-                <a className={s.dropdown_link} href="">
-                  Item 1
-                </a>
-              </li>
-              <li href="">
-                <a className={s.dropdown_link}>Item 2</a>
-              </li>
-            </ul>
-          </li>
-          <li className="dropdown dropdown-end dropdown-hover">
-            <a>
-              Documentos
-              <CaretDown />
-            </a>
-            <ul
-              tabIndex="0"
-              className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
-            >
-              <li>
-                <a className={s.dropdown_link} href="">
-                  Item 1
-                </a>
-              </li>
-              <li href="">
-                <a className={s.dropdown_link}>Item 2</a>
-              </li>
-            </ul>
-          </li>
-          <li className="dropdown dropdown-end dropdown-hover">
-            <a>
-              Produção
-              <CaretDown />
-            </a>
-            <ul
-              tabIndex="0"
-              className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
-            >
-              <li>
-                <a className={s.dropdown_link} href="">
-                  Item 1
-                </a>
-              </li>
-              <li href="">
-                <a className={s.dropdown_link}>Item 2</a>
-              </li>
-            </ul>
-          </li>
-          <li className="dropdown dropdown-end dropdown-hover">
-            <a>
-              Links Úteis
-              <CaretDown />
-            </a>
-            <ul
-              tabIndex="0"
-              className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
-            >
-              <li>
-                <a className={s.dropdown_link} href="">
-                  Item 1
-                </a>
-              </li>
-              <li href="">
-                <a className={s.dropdown_link}>Item 2</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
     </div>
   );
 };
