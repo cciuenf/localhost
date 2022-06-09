@@ -1,0 +1,40 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: #01579b;
+}
+
+.logo {
+  @apply ml-6;
+}
+
+.nav {
+  padding: 15px 10px;
+  border: none;
+  background: #01579b;
+}
+
+.nav ul {
+  @apply flex items-center justify-center;
+}
+
+.nav ul a {
+  @apply flex items-center gap-1;
+  @apply p-4;
+  @apply text-white;
+  @apply transition-colors ease-in-out duration-200;
+}
+
+.nav ul a:hover {
+  @apply opacity-80;
+}
+
+.nav .dropdown_link {
+  @apply text-black;
+}
