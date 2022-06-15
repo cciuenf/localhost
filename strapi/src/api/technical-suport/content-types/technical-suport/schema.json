@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "technical_suports",
+  "info": {
+    "singularName": "technical-suport",
+    "pluralName": "technical-suports",
+    "displayName": "Technical Support",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "room": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "administration_technicians",
+  "info": {
+    "singularName": "administration-technician",
+    "pluralName": "administration-technicians",
+    "displayName": "Administration Technician",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "room": {
+      "type": "string"
+    }
+  }
+}

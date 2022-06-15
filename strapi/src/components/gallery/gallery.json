@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_gallery_galleries",
+  "info": {
+    "displayName": "gallery"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

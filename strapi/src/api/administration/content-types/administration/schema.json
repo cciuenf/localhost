@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "administrations",
+  "info": {
+    "singularName": "administration",
+    "pluralName": "administrations",
+    "displayName": "Administration",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "administration_technician": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::administration-technician.administration-technician"
+    },
+    "manager": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::manager.manager"
+    },
+    "technical_supports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::technical-suport.technical-suport"
+    }
+  }
+}
