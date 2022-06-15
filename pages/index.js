@@ -1,4 +1,4 @@
-import { Header, Hero } from "../components";
+import { Footer, Header, Hero } from "../components";
 
 export default function Home() {
   return (
@@ -6,6 +6,7 @@ export default function Home() {
       <Header />
       <Hero />
       <div style={{ height: "200vh" }}></div>
+      <Footer />
     </>
   );
 }
