@@ -4,13 +4,14 @@
 
 .header {
   position: fixed;
-  z-index: 100;
+  z-index: 300;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border: none;
   background: #01579b;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
 .logo {

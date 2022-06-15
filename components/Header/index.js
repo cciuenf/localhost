@@ -9,10 +9,9 @@ export const Header = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState("");
 
   const [logoWidth, setLogoWidth] = useState(150);
-  const [logoHeight, setLogoHeight] = useState(80);
+  const [logoHeight, setLogoHeight] = useState(92.14);
 
   const [padding, setPadding] = useState(20);
-  const [boxShadow, setBoxShadow] = useState(0);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -28,25 +27,20 @@ export const Header = () => {
 
     if (backgroundTransparacy < 1) {
       let padding = 15 - backgroundTransparacy * 10;
-      let logoWidth = 150 - backgroundTransparacy * 20;
-      let logoHeight = 90 - backgroundTransparacy * 20;
-      let boxShadow = backgroundTransparacy * 0.1;
+      let logoWidth = 160 - backgroundTransparacy * 30;
+      let logoHeight = 100 - backgroundTransparacy * 20;
       setPadding(padding);
-      setBoxShadow(boxShadow);
       setLogoWidth(logoWidth);
       setLogoHeight(logoHeight);
     }
   }, [clientWindowHeight]);
 
   return (
-    <div
-    className={s.wrapper}
-    >
-      <div
+    <div className={s.wrapper}>
+      <header
         className={s.header}
         style={{
           padding: `${padding}px 10px`,
-          boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
         }}
       >
         <div className={s.logo}>
@@ -142,7 +136,7 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-      </div>
+      </header>
     </div>
   );
 };
