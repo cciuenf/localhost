@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "technical_suports",
+  "collectionName": "technical_supports",
   "info": {
-    "singularName": "technical-suport",
-    "pluralName": "technical-suports",
+    "singularName": "technical-support",
+    "pluralName": "technical-supports",
     "displayName": "Technical Support",
     "description": ""
   },
