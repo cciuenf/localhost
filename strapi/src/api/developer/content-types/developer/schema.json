@@ -4,7 +4,8 @@
   "info": {
     "singularName": "developer",
     "pluralName": "developers",
-    "displayName": "Developer"
+    "displayName": "Desenvolvedor",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -31,15 +32,15 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     }
   }
 }
