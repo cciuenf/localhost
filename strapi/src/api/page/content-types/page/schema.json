@@ -38,6 +38,11 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo"
+    },
+    "sections": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::section.section"
     }
   }
 }
