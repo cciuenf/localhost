@@ -1,12 +1,9 @@
-import { Footer, Header, Hero } from "../components";
+import { Layout, Hero } from "../components";
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <Layout>
       <Hero />
-      <div style={{ height: "200vh" }}></div>
-      <Footer />
-    </>
+    </Layout>
   );
 }
