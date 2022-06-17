@@ -1,0 +1,25 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item p {
+  text-align: center;
+}
+
+.item p a {
+  color: #337ab7;
+}
+
+.item p a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
