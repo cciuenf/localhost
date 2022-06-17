@@ -1,7 +1,8 @@
 {
   "collectionName": "components_gallery_galleries",
   "info": {
-    "displayName": "gallery"
+    "displayName": "Galeria",
+    "description": ""
   },
   "options": {},
   "attributes": {

@@ -2,8 +2,7 @@ import { Footer, Header, Hero, Section, Info, Carousel} from "../components";
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <Layout>
       <Hero />
       <Section title="Notícias">
         <Carousel />
@@ -12,6 +11,6 @@ export default function Home() {
         <Info />
       </Section>
       <Footer />
-    </>
+    </Layout>
   );
 }
