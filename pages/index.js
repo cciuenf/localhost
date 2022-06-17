@@ -1,4 +1,4 @@
-import { Footer, Header, Hero, Section, Info, Carousel} from "../components";
+import { Layout, Hero, Section, Info, Carousel } from "../components";
 
 export default function Home() {
   return (
@@ -10,7 +10,6 @@ export default function Home() {
       <Section title="O Curso">
         <Info />
       </Section>
-      <Footer />
     </Layout>
   );
 }

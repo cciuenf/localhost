@@ -178,7 +178,7 @@ export const Hero = () => {
           height="307.12"
         ></canvas>
         <div className="container flex flex-col items-center justify-center gap-4">
-          <div className={s.logo}>
+          <div>
             <Image
               src="/assets/logo-cc.png"
               width={500}
