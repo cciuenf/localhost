@@ -9448,6 +9448,13 @@ std-env@^2.2.1:
   dependencies:
     ci-info "^3.1.1"
 
+strapi-plugin-slugify@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-slugify/-/strapi-plugin-slugify-2.2.2.tgz#55f5bd603eea3d4f758a8c654b9e04d3ba89fc91"
+  integrity sha512-Kra7uXZUM+70m02Qoa/su+HxBxqrFhxyLt/B90kd4LwnEjebXA6nsAsa0dxafMunQfqWQey7JOV+qToB4a3FXg==
+  dependencies:
+    "@sindresorhus/slugify" "1.1.0"
+
 stream-browserify@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stream-browserify/-/stream-browserify-3.0.0.tgz#22b0a2850cdf6503e73085da1fc7b7d0c2122f2f"

@@ -22,7 +22,8 @@
     "component": {
       "type": "dynamiczone",
       "components": [
-        "gallery.gallery"
+        "gallery.gallery",
+        "supporters.apoiadores"
       ],
       "required": true
     }

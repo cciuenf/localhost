@@ -38,8 +38,9 @@
       "relation": "oneToMany",
       "target": "api::author.author"
     },
-    "publish_date": {
-      "type": "datetime"
+    "slug": {
+      "type": "string",
+      "unique": true
     }
   }
 }

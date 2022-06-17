@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_supporters_apoiadores",
+  "info": {
+    "displayName": "Apoiadores",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "supporters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::supporter.supporter"
+    }
+  }
+}

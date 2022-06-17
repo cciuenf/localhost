@@ -6,8 +6,20 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    },
+    "teachers": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::teacher.teacher"
+    },
+    "developers": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::developer.developer"
     }
   }
 }
