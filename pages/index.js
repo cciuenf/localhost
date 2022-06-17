@@ -1,11 +1,16 @@
-import { Footer, Header, Hero } from "../components";
+import { Footer, Header, Hero, Section} from "../components";
+import Info from "../components/Info/index"
 
 export default function Home() {
   return (
     <>
       <Header />
       <Hero />
-      <div style={{ height: "200vh" }}></div>
+      <Section title="Notícias">
+      </Section>
+      <Section title="O Curso">
+        <Info />
+      </Section>
       <Footer />
     </>
   );
