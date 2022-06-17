@@ -1,5 +1,4 @@
-import { Footer, Header, Hero, Section} from "../components";
-import Info from "../components/Info/index"
+import { Footer, Header, Hero, Section, Info, Carousel} from "../components";
 
 export default function Home() {
   return (
@@ -7,6 +6,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Section title="Notícias">
+        <Carousel />
       </Section>
       <Section title="O Curso">
         <Info />

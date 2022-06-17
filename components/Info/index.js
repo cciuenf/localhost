@@ -1,7 +1,7 @@
 import react from "react";
 import s from "./Info.module.css";
 
-const Info = (props) => {
+export const Info = () => {
     return(
        <>
             <p className={s.text}>
@@ -17,4 +17,4 @@ const Info = (props) => {
     );
 };
 
-export default Info; 
+
