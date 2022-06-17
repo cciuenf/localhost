@@ -12,10 +12,10 @@ export const Hero = () => {
     return Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2);
   }
 
-  function map(v, oldMin, oldMax, newMin, newMax){
+  function map(v, oldMin, oldMax, newMin, newMax) {
     let prop = (v - oldMin) / (oldMax - oldMin);
     return newMin + prop * (newMax - newMin);
-}
+  }
 
   useEffect(() => {
     var cv = document.getElementById("drawCanvas");
@@ -169,9 +169,14 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div>
+    <section>
       <div className={s.background}>
-        <canvas id="drawCanvas" className="absolute z-[0]" width="500" height="307.12"></canvas>
+        <canvas
+          id="drawCanvas"
+          className="absolute z-[0]"
+          width="500"
+          height="307.12"
+        ></canvas>
         <div className="container flex flex-col items-center justify-center gap-4">
           <div className={s.logo}>
             <Image
@@ -182,11 +187,11 @@ export const Hero = () => {
             />
           </div>
           <div className="flex items-center gap-4">
-            <a className="btn btn-lg z-[100]">Últimas Notícias</a>
-            <a className="btn btn-lg z-[100]">Sobre o curso</a>
+            <a className="btn btn-lg z-[100] text-white">Últimas Notícias</a>
+            <a className="btn btn-lg z-[100] text-white">Sobre o curso</a>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
