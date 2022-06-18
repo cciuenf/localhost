@@ -32,6 +32,9 @@
     },
     "height": {
       "type": "integer"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
