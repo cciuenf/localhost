@@ -1,38 +1,8 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import News from "../News";
 
-const handleDragStart = (e) => e.preventDefault();
-
-const items = [
-  <News
-    key="1"
-    title="lorem ipsum"
-    link="www.gogle.com"
-    img="/assets/IMG.jpeg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />,
-  <News
-    key="2"
-    title="lorem ipsum"
-    link="www.gogle.com"
-    img="/assets/IMG.jpeg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />,
-  <News
-    key="3"
-    title="lorem ipsum"
-    link="www.gogle.com"
-    img="/assets/IMG.jpeg"
-    onDragStart={handleDragStart}
-    role="presentation"
-  />,
-];
-
-export const Carousel = () => {
+export const Carousel = ({ items }) => {
   return (
     <>
       <AliceCarousel

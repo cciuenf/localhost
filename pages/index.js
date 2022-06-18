@@ -5,23 +5,75 @@ import {
   Info,
   Carousel,
   Supporters,
+  News,
 } from "../components";
+import { api } from "../services/api";
 
-export default function Home() {
+const handleDragStart = (e) => e.preventDefault();
+
+export default function Home(props) {
+  const sections = props.sections.data.map((section) => section.attributes);
+
+  const supporters = sections[2].component[0].supporters.data.map(
+    (supporter) => supporter.attributes
+  );
+
+  const articleItems = props.articles.map((article, index) => {
+    return (
+      <News
+        key={index}
+        title={article.title}
+        link={`/noticias/${article.slug}`}
+        img={article.cover_image.data.attributes.url}
+        authors={article.authors}
+        description={article.description}
+        published_at={article.publishedAt}
+        onDragStart={handleDragStart}
+        role="presentation"
+      />
+    );
+  });
+
   return (
-    <Layout>
+    <Layout seo={props.seo}>
       <Hero />
       <main>
-        <Section title="Notícias">
-          <Carousel />
+        <Section title={sections[0].title}>
+          <Carousel items={articleItems} />
         </Section>
-        <Section title="O Curso">
-          <Info />
+        <Section title={sections[1].title}>
+          <Info text={sections[1].description} />
         </Section>
-        <Section title="Apoiadores" backgroundColor="#e8e8e8">
-          <Supporters />
+        <Section title={sections[2].title} backgroundColor="#e8e8e8">
+          <Supporters supporters={supporters} />
         </Section>
       </main>
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const {
+    data: {
+      data: { attributes: page },
+    },
+  } = await api.get(
+    "/pages/3?populate=seo.meta_tags,sections.component.supporters.logo"
+  );
+
+  const {
+    data: { data },
+  } = await api.get(
+    "/articles?populate=cover_image,authors&sort[0]=publishedAt%3Adesc&pagination[page]=1&pagination[pageSize]=5"
+  );
+
+  const articles = data.map((article) => article.attributes);
+
+  return {
+    props: {
+      ...page,
+      articles,
+    },
+    revalidate: 60 * 60, // 60 minutes
+  };
+};

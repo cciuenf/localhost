@@ -3,10 +3,10 @@ import { Header } from "../Header";
 import { Footer } from "../Footer";
 import { Seo } from "../Seo";
 
-export const Layout = ({ children }) => {
+export const Layout = ({ seo, children }) => {
   return (
     <>
-      <Seo />
+      <Seo {...seo} />
       <Header />
       {children}
       <Footer />
