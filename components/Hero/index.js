@@ -187,8 +187,22 @@ export const Hero = () => {
             />
           </div>
           <div className="flex items-center gap-4">
-            <a className="btn btn-lg z-[100] text-white">Últimas Notícias</a>
-            <a className="btn btn-lg z-[100] text-white">Sobre o curso</a>
+            <button
+              className="btn btn-lg z-[100] text-white"
+              onClick={() =>
+                window.scroll({ top: 650, left: 0, behavior: "smooth" })
+              }
+            >
+              Últimas Notícias
+            </button>
+            <button
+              className="btn btn-lg z-[100] text-white"
+              onClick={() =>
+                window.scroll({ top: 1250, left: 0, behavior: "smooth" })
+              }
+            >
+              Sobre o curso
+            </button>
           </div>
         </div>
       </div>
