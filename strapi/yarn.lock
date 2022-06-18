@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+"@_sh/strapi-plugin-ckeditor@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@_sh/strapi-plugin-ckeditor/-/strapi-plugin-ckeditor-1.1.0.tgz#d73415a2282a3cdf4f77bac9d5adb972b0d9c191"
+  integrity sha512-3vPNLhgetVjg2fZDBcj1BwKyK4rU+3I6hAq5ZWf8szvLacL7G56DEFgOo6WQQ6//r8XjXILbIS1ekZAHCMbWrQ==
+  dependencies:
+    "@ckeditor/ckeditor5-react" "5.0.0"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.16.7":
   version "7.16.7"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.16.7.tgz#44416b6bd7624b998f5b1af5d470856c40138789"
@@ -973,6 +980,13 @@
   integrity sha512-7+GOnMUq6q4fqtDDesymBXTS9LSDVezYhFiSJ8Rn3f0aQLeRm7qHn66KWbej4niCOvm0XzNj9jzpkK0yz6hUww==
   dependencies:
     "@ucast/mongo2js" "^1.3.0"
+
+"@ckeditor/ckeditor5-react@5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@ckeditor/ckeditor5-react/-/ckeditor5-react-5.0.0.tgz#b9ad16bb84415beff0b555ddc92d5e184d41f5a1"
+  integrity sha512-5E/Npua1goikPdbx6GpeFNwOem+lslgYs2r3CycXcbxa3/d9C6ZBVpWppLk3rlRcUKTOXvGNkjfqRoGk9QhATA==
+  dependencies:
+    prop-types "^15.7.2"
 
 "@colors/colors@1.5.0":
   version "1.5.0"
