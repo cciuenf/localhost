@@ -56,10 +56,10 @@ export const Header = () => {
         <nav className={s.nav}>
           <ul>
             <li>
-              <a href="">Apresentação</a>
+              <a href="/">Apresentação</a>
             </li>
             <li className="dropdown dropdown-end dropdown-hover">
-              <a>
+              <a href="/pessoas">
                 Pessoas
                 <CaretDown />
               </a>
@@ -69,11 +69,18 @@ export const Header = () => {
               >
                 <li>
                   <a className={s.dropdown_link} href="">
-                    Item 1
+                    Professores
                   </a>
                 </li>
-                <li href="">
-                  <a className={s.dropdown_link}>Item 2</a>
+                <li>
+                  <a className={s.dropdown_link} href="">
+                    Administração
+                  </a>
+                </li>
+                <li>
+                  <a className={s.dropdown_link} href="">
+                    Discentes
+                  </a>
                 </li>
               </ul>
             </li>
@@ -87,7 +94,7 @@ export const Header = () => {
                 className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
               >
                 <li>
-                  <a className={s.dropdown_link} href="">
+                  <a className={s.dropdown_link} href="/">
                     Item 1
                   </a>
                 </li>
