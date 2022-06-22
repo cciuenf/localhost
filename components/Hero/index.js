@@ -175,7 +175,7 @@ export const Hero = () => {
           id="drawCanvas"
           className="absolute z-[0]"
           width="500"
-          height="307.12"
+          height="507.12"
         ></canvas>
         <div className="container flex flex-col items-center justify-center gap-4">
           <div>
