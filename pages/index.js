@@ -37,17 +37,15 @@ export default function Home(props) {
   return (
     <Layout seo={props.seo}>
       <Hero />
-      <main>
-        <Section title={sections[0].title}>
-          <Carousel items={articleItems} />
-        </Section>
-        <Section title={sections[1].title}>
-          <Info text={sections[1].description} />
-        </Section>
-        <Section title={sections[2].title} backgroundColor="#e8e8e8">
-          <Supporters supporters={supporters} />
-        </Section>
-      </main>
+      <Section title={sections[0].title}>
+        <Carousel items={articleItems} />
+      </Section>
+      <Section title={sections[1].title}>
+        <Info text={sections[1].description} />
+      </Section>
+      <Section title={sections[2].title} backgroundColor="#e8e8e8">
+        <Supporters supporters={supporters} />
+      </Section>
     </Layout>
   );
 }

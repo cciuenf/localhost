@@ -12,7 +12,7 @@ export const Carousel = ({ items }) => {
         paddingLeft="100px"
         responsive={{
           0: { items: 1 },
-          820: { items: 2 },
+          960: { items: 2 },
           1024: { items: 3 },
         }}
       />

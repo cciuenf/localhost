@@ -10,6 +10,7 @@ export const Document = ({ children, title, attachments, urlDownloadAll }) => {
           {!!urlDownloadAll && (
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href={urlDownloadAll}
               className="btn btn-md z-[100] text-white"
             >
@@ -28,9 +29,13 @@ export const Document = ({ children, title, attachments, urlDownloadAll }) => {
           <div className={s.item}>
             <h3>Anexos</h3>
             <ul>
-              {attachments.map((attachment) => (
-                <li>
-                  <a target="_blank" href={attachment.url}>
+              {attachments.map((attachment, index) => (
+                <li key={index}>
+                  <a
+                    target="_blank"
+                    href={attachment.url}
+                    rel="noopener noreferrer"
+                  >
                     {attachment.title}
                   </a>
                 </li>

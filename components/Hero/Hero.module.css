@@ -3,7 +3,7 @@
   background-size: cover;
   max-width: 100vw;
   background-color: #e5e4e5;
-  height: 100vh;
+  height: calc(100vh - 135px);
   display: flex;
   align-items: center;
   justify-content: center;

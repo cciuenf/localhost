@@ -5,3 +5,50 @@
 :root {
   --color-primary: #01579b;
 }
+
+.alice-carousel__prev-btn {
+  width: fit-content !important;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+}
+
+.alice-carousel__next-btn {
+  width: fit-content !important;
+  position: absolute;
+  top: 50%;
+  right: -20px;
+
+  transform: translateY(-50%);
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  width: 32px;
+  height: 32px;
+}
+
+.alice-carousel__prev-btn span,
+.alice-carousel__next-btn span {
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.alice-carousel__prev-btn span::after,
+.alice-carousel__next-btn span::after {
+  color: var(--color-primary);
+  font-size: 28px;
+}
+
+.alice-carousel__prev-btn span:hover::after,
+.alice-carousel__next-btn span:hover::after {
+  opacity: 0.6;
+}
+
+/* .alice-carousel__prev-btn-item
+  .alice-carousel__next-btn
+  .alice-carousel__next-btn-item; */

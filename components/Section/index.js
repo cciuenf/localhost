@@ -4,7 +4,10 @@ import s from "./Section.module.css";
 export const Section = (props) => {
   return (
     <section
-      style={props.backgroundColor && { background: props.backgroundColor }}
+      style={
+        (props.backgroundColor && { background: props.backgroundColor },
+        props.mt && { marginTop: props.mt })
+      }
       className={s.wrapper}
     >
       <div className={s.container}>

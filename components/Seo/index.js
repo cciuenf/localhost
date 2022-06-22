@@ -28,5 +28,6 @@ Seo.defaultProps = {
   title: "Ciência da Computação - UENF",
   description: "Website do curso de Ciência da Computação - UENF",
   image: "assets/logo-cc.png",
+  meta_tags: [],
   url: "https://cc.uenf.br",
 };
