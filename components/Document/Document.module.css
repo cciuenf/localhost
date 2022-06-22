@@ -103,6 +103,15 @@
         flex-direction: column;
     }
 
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .header a {
+        width:100%;
+    }
+
     .line {
         visibility: hidden;
         min-height: 0px;
