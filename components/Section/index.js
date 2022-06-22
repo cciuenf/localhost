@@ -4,10 +4,7 @@ import s from "./Section.module.css";
 export const Section = (props) => {
   return (
     <section
-      style={
-        (props.backgroundColor && { background: props.backgroundColor },
-        props.mt && { marginTop: props.mt })
-      }
+      style={{ background: props.backgroundColor, marginTop: props.mt }}
       className={s.wrapper}
     >
       <div className={s.container}>
