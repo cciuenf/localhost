@@ -109,14 +109,49 @@ export const Header = () => {
                 <li>
                   <Link href="/documentos">
                     <a className={s.dropdown_link} href="javascript:void(0)">
-                      Item 1
+                      PDI
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/documentos">
+                    <a className={s.dropdown_link} href="javascript:void(0)">
+                      Projetos Pedagógicos
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/documentos">
+                    <a className={s.dropdown_link} href="javascript:void(0)">
+                      Grade Curricular
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/documentos">
+                    <a className={s.dropdown_link} href="javascript:void(0)">
+                      Matriz Curricular
                     </a>
                   </Link>
                 </li>
                 <li href="">
                   <Link href="/documentos">
                     <a className={s.dropdown_link} href="javascript:void(0)">
-                      Item 2
+                      Regulamentos
+                    </a>
+                  </Link>
+                </li>
+                <li href="">
+                  <Link href="/documentos">
+                    <a className={s.dropdown_link} href="javascript:void(0)">
+                      Formulários
+                    </a>
+                  </Link>
+                </li>
+                <li href="">
+                  <Link href="/documentos">
+                    <a className={s.dropdown_link} href="javascript:void(0)">
+                      Diretrizes Curriculares
                     </a>
                   </Link>
                 </li>
