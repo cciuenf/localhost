@@ -12,16 +12,22 @@
   padding: 30px 0 40px;
 }
 
+.header {
+  width: 60%;
+  position: relative;
+}
+
 .title {
   font-size: 50px;
   font-weight: 700;
   letter-spacing: -0.04em;
   text-align: center;
+
   color: #424242;
 }
 
 .line {
-  width: 50%;
+  width: 60%;
   min-width: 300px;
   color: #01579b;
   background-color: #01579b;
@@ -29,4 +35,17 @@
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
+}
+
+.link {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-30%);
+
+  color: var(--color-primary);
+}
+
+.link:hover {
+  color: #003056;
 }

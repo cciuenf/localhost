@@ -4,6 +4,18 @@
   padding: 40px 0;
 }
 
+.newsContainer {
+  margin: 0 auto;
+  gap: 5px;
+  padding: 40px 0;
+  min-height: calc(100vh - 135px - 112px);
+}
+
+.newsContainer h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
 .title {
   font-size: 1.5rem;
   font-weight: 700;
@@ -32,6 +44,10 @@
 .cover {
   margin: 0.5rem 8rem;
   clear: both;
+}
+
+.cover img {
+  object-fit: cover;
 }
 
 .cover > span {
@@ -86,4 +102,47 @@
 .thread {
   width: 700px;
   margin: 20px auto 0px;
+}
+
+.newsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 40px 0;
+  min-height: calc(100vh - 135px - 112px);
+}
+
+.newsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.newsItem h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.newsItem .meta p {
+  color: #999;
+}
+
+.newsItem .description {
+  text-align: center;
+}
+
+.newsItem .description a {
+  color: var(--color-primary);
+}
+
+.newsItem .description a:hover {
+  color: #003056;
 }
