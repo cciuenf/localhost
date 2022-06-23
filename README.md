@@ -1,6 +1,6 @@
 # Código-fonte do website institucional do curso CC UENF
 
-Este repositório contém todo o código-fonte desenvolvido para o website institucional do curso de Ciência da Computação da UENF. Este projeto foi implementado como forma de trabalho de conclusão da disciplina de Interface Homem Máquina no semestre 2022/1.
+Este repositório contém todo o código-fonte desenvolvido para o website institucional do curso de Ciência da Computação da UENF. Este projeto foi implementado como forma de trabalho final da disciplina de Interface Homem Máquina no semestre 2022/1.
 
 ## Tecnologias utilizadas
 
@@ -8,10 +8,15 @@ Este repositório contém todo o código-fonte desenvolvido para o website insti
 - Next.js <a href="https://nextjs.org/docs">(documentação)</a> <a href="https://github.com/unicodeveloper/awesome-nextjs#videos">(tutoriais)</a>
 - Tailwind CSS <a href="https://tailwindcss.com/docs/installation">(documentação)</a> <a href="https://github.com/aniftyco/awesome-tailwindcss#learning">(tutoriais)</a>
 - Daisy UI <a href="https://daisyui.com/docs/install/">(documentação)</a>
+- Strapi <a href="https://docs.strapi.io/developer-docs/latest/getting-started/introduction.html">(documentação)</a>
+
+### Justificativa
+
+A principal razão para utilizar as tecnologias acima é a facilidade de desenvolvimento e o aumento de produtividade por parte da equipe, pois a maioria dos colaboradores já estão familiarizados com estas tecnologias. Além disso, o prazo de entrega do projeto é curto, portanto, optamos por um conjunto de tecnologias que aceleram o desenvolvimento do projeto.
 
 ## Estrutura do projeto
 
-A estrutura deste projeto segue o mesmo padrão estabelecido pelo Next.js, como mostrado abaixo:
+A estrutura deste projeto segue o mesmo padrão estabelecido pelo Next.js (com exceção da pasta `strapi`), como mostrado abaixo:
 
 ```bash
 .
@@ -21,6 +26,7 @@ A estrutura deste projeto segue o mesmo padrão estabelecido pelo Next.js, como 
 ├── next.config.js
 ├── package.json
 ├── /pages
+├── /strapi
 ├── postcss.config.js
 ├── /public
 ├── /styles
@@ -35,6 +41,7 @@ A estrutura deste projeto segue o mesmo padrão estabelecido pelo Next.js, como 
 - `next.config.js`: arquivo de configuração do Next.js
 - `package.json`: arquivo de configuração do projeto Node.js
 - `/pages`: diretório de páginas
+- `/strapi`: diretório com o código-fonte do Strapi CMS
 - `postcss.config.js`: arquivo de configuração do PostCSS
 - `/public`: diretório de arquivos estáticos
 - `/styles`: diretório de estilos
