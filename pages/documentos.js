@@ -33,7 +33,7 @@ export const getStaticProps = async () => {
 
   const {
     data: { data },
-  } = await api.get("/documents");
+  } = await api.get("/documents?populate=attachments");
 
   const documents = data.map((document) => document.attributes);
 
