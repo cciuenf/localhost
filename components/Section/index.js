@@ -7,7 +7,7 @@ export const Section = (props) => {
       style={{ background: props.backgroundColor, marginTop: props.mt }}
       className={s.wrapper}
     >
-      <div className={s.container}>
+      <div className="wrapper">
         <h2 className={s.title}>{props.title}</h2>
         <hr className={s.line} />
         {props.children}
