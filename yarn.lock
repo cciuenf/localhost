@@ -277,6 +277,8 @@ aria-query@^4.2.2:
     "@babel/runtime-corejs3" "^7.10.2"
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 "array-includes@^3.1.4", "array-includes@^3.1.5":
   "integrity" "sha512-iSDYZMMyTPkiFasVqfuAQnWAYcvO/SeBSCGKePoEthjp4LEMTe4uLc7b025o4jAZpHhihh8xPo99TNWUWWkGDQ=="
   "resolved" "https://registry.npmjs.org/array-includes/-/array-includes-3.1.5.tgz"
@@ -433,6 +435,7 @@ aria-query@^4.2.2:
     "normalize-path" "~3.0.0"
     "readdirp" "~3.6.0"
 =======
+>>>>>>> main
 array-includes@^3.1.4, array-includes@^3.1.5:
   version "3.1.5"
   resolved "https://registry.npmjs.org/array-includes/-/array-includes-3.1.5.tgz"
@@ -588,7 +591,10 @@ chokidar@^3.5.3:
     is-glob "~4.0.1"
     normalize-path "~3.0.0"
     readdirp "~3.6.0"
+<<<<<<< HEAD
+=======
 >>>>>>> 1208f9fe27f3b8b7a80b42ca452d98597d70226c
+>>>>>>> main
   optionalDependencies:
     fsevents "~2.3.2"
 
@@ -609,6 +615,8 @@ color-string@^1.9.0:
   resolved "https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz"
   integrity sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
   dependencies:
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
     "color-name" "^1.0.0"
     "simple-swizzle" "^0.2.2"
@@ -834,6 +842,7 @@ color-string@^1.9.0:
   "resolved" "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-12.1.6.tgz"
   "version" "12.1.6"
 =======
+>>>>>>> main
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
@@ -1052,7 +1061,10 @@ eslint-config-next@12.1.6:
   version "12.1.6"
   resolved "https://registry.npmjs.org/eslint-config-next/-/eslint-config-next-12.1.6.tgz"
   integrity sha512-qoiS3g/EPzfCTkGkaPBSX9W0NGE/B1wNO3oWrd76QszVGrdpLggNqcO8+LR6MB0CNqtp9Q8NoeVrxNVbzM9hqA==
+<<<<<<< HEAD
+=======
 >>>>>>> 1208f9fe27f3b8b7a80b42ca452d98597d70226c
+>>>>>>> main
   dependencies:
     "@next/eslint-plugin-next" "12.1.6"
     "@rushstack/eslint-patch" "^1.1.3"
@@ -1264,6 +1276,8 @@ fast-glob@^3.2.11, fast-glob@^3.2.9:
   dependencies:
     "@nodelib/fs.stat" "^2.0.2"
     "@nodelib/fs.walk" "^1.2.3"
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
     "glob-parent" "^5.1.2"
     "merge2" "^1.3.0"
@@ -1536,6 +1550,7 @@ fast-glob@^3.2.11, fast-glob@^3.2.9:
   "resolved" "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz"
   "version" "0.3.2"
 =======
+>>>>>>> main
     glob-parent "^5.1.2"
     merge2 "^1.3.0"
     micromatch "^4.0.4"
@@ -1804,6 +1819,50 @@ is-arrayish@^0.3.1:
   version "0.3.2"
   resolved "https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz"
   integrity sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
+<<<<<<< HEAD
+
+is-bigint@^1.0.1:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/is-bigint/-/is-bigint-1.0.4.tgz"
+  integrity sha512-zB9CruMamjym81i2JZ3UMn54PKGsQzsJeo6xvN3HJJ4CAsQNB6iRutp2To77OfCNuoxspsIhzaPoO1zyCEhFOg==
+  dependencies:
+    has-bigints "^1.0.1"
+
+is-binary-path@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz"
+  integrity sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==
+  dependencies:
+    binary-extensions "^2.0.0"
+
+is-boolean-object@^1.1.0:
+  version "1.1.2"
+  resolved "https://registry.npmjs.org/is-boolean-object/-/is-boolean-object-1.1.2.tgz"
+  integrity sha512-gDYaKHJmnj4aWxyj6YHyXVpdQawtVLHU5cb+eztPGczf6cjuTdwve5ZIEfgXqH4e57An1D1AKf8CZ3kYrQRqYA==
+  dependencies:
+    call-bind "^1.0.2"
+    has-tostringtag "^1.0.0"
+
+is-callable@^1.1.4, is-callable@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.npmjs.org/is-callable/-/is-callable-1.2.4.tgz"
+  integrity sha512-nsuwtxZfMX67Oryl9LCQ+upnC0Z0BgpwntpS89m1H/TLF0zNfzfLMV/9Wa/6MZsj0acpEjAO0KF1xT6ZdLl95w==
+
+is-core-module@^2.2.0, is-core-module@^2.8.1:
+  version "2.9.0"
+  resolved "https://registry.npmjs.org/is-core-module/-/is-core-module-2.9.0.tgz"
+  integrity sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==
+  dependencies:
+    has "^1.0.3"
+
+is-date-object@^1.0.1:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/is-date-object/-/is-date-object-1.0.5.tgz"
+  integrity sha512-9YQaSxsAiSwcvS33MBk3wTCVnWK+HhF8VZR2jRxehM16QcVOdHqPn4VPHmRK4lSr38n9JriurInLcP90xsYNfQ==
+  dependencies:
+    has-tostringtag "^1.0.0"
+
+=======
 >>>>>>> 1208f9fe27f3b8b7a80b42ca452d98597d70226c
 
 is-bigint@^1.0.1:
@@ -1847,6 +1906,7 @@ is-date-object@^1.0.1:
   dependencies:
     has-tostringtag "^1.0.0"
 
+>>>>>>> main
 is-extglob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz"
@@ -2070,6 +2130,11 @@ next@12.1.6:
   dependencies:
     "@next/env" "12.1.6"
 <<<<<<< HEAD
+    caniuse-lite "^1.0.30001332"
+    postcss "8.4.5"
+    styled-jsx "5.0.2"
+=======
+<<<<<<< HEAD
     "caniuse-lite" "^1.0.30001332"
     "postcss" "8.4.5"
     "styled-jsx" "5.0.2"
@@ -2078,6 +2143,7 @@ next@12.1.6:
     postcss "8.4.5"
     styled-jsx "5.0.2"
 >>>>>>> 1208f9fe27f3b8b7a80b42ca452d98597d70226c
+>>>>>>> main
   optionalDependencies:
     "@next/swc-android-arm-eabi" "12.1.6"
     "@next/swc-android-arm64" "12.1.6"
@@ -2092,6 +2158,8 @@ next@12.1.6:
     "@next/swc-win32-ia32-msvc" "12.1.6"
     "@next/swc-win32-x64-msvc" "12.1.6"
 
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 "node-releases@^2.0.5":
   "integrity" "sha512-U9h1NLROZTq9uE1SNffn6WuPDg8icmi3ns4rEl/oTfIle4iLjTliCzgTsbaIFMq/Xn078/lfY/BL0GWZ+psK4Q=="
@@ -2623,6 +2691,7 @@ next@12.1.6:
   "resolved" "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz"
   "version" "3.14.1"
 =======
+>>>>>>> main
 node-releases@^2.0.5:
   version "2.0.5"
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.5.tgz"
@@ -3152,7 +3221,10 @@ tsconfig-paths@^3.14.1:
   version "3.14.1"
   resolved "https://registry.npmjs.org/tsconfig-paths/-/tsconfig-paths-3.14.1.tgz"
   integrity sha512-fxDhWnFSLt3VuTwtvJt5fpwxBHg5AdKWMsgcPOOIilyjymcYVZoCQF8fvFRezCNfblEXmi+PcM1eYHeOAgXCOQ==
+<<<<<<< HEAD
+=======
 >>>>>>> 1208f9fe27f3b8b7a80b42ca452d98597d70226c
+>>>>>>> main
   dependencies:
     "@types/json5" "^0.0.29"
     json5 "^1.0.1"
