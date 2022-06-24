@@ -13,12 +13,12 @@
     },
     "teachers": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::teacher.teacher"
     },
     "developers": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "oneToMany",
       "target": "api::developer.developer"
     }
   }
