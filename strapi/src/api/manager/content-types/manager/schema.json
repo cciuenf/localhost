@@ -21,6 +21,11 @@
     },
     "room": {
       "type": "string"
+    },
+    "teacher": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::teacher.teacher"
     }
   }
 }

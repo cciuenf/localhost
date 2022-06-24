@@ -34,10 +34,15 @@ export default function Home(props) {
     );
   });
 
+  const articlesLink = {
+    href: "/noticias",
+    text: "Ver todas as notícias",
+  };
+
   return (
     <Layout seo={props.seo}>
       <Hero />
-      <Section title={sections[0].title}>
+      <Section title={sections[0].title} rightLink={articlesLink}>
         <Carousel items={articleItems} />
       </Section>
       <Section title={sections[1].title}>
@@ -72,6 +77,6 @@ export const getStaticProps = async () => {
       ...page,
       articles,
     },
-    revalidate: 60 * 60, // 60 minutes
+    revalidate: 15 * 60, // 15 minutes
   };
 };

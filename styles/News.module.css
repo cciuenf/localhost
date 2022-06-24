@@ -1,0 +1,148 @@
+.container {
+  margin: 0 auto;
+  gap: 5px;
+  padding: 40px 0;
+}
+
+.newsContainer {
+  margin: 0 auto;
+  gap: 5px;
+  padding: 40px 0;
+  min-height: calc(100vh - 135px - 112px);
+}
+
+.newsContainer h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.meta {
+  display: flex;
+  gap: 20px;
+}
+
+.line {
+  width: 80%;
+  border: 0.5px solid #e0e0e0;
+  margin: 8px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #999;
+}
+
+.cover {
+  margin: 0.5rem 8rem;
+  clear: both;
+}
+
+.cover img {
+  object-fit: cover;
+}
+
+.cover > span {
+  float: left;
+  margin-right: 1.5em !important;
+}
+
+.content a {
+  color: #337ab7;
+  font-weight: 400;
+}
+
+.content a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+}
+
+.previous,
+.next {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.previous a,
+.next a {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.previous a:hover,
+.next a:hover {
+  color: #003056;
+}
+
+.thread {
+  width: 700px;
+  margin: 20px auto 0px;
+}
+
+.newsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 40px 0;
+  min-height: calc(100vh - 135px - 112px);
+}
+
+.newsItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.newsItem h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.newsItem .meta p {
+  color: #999;
+}
+
+.newsItem .description {
+  text-align: center;
+}
+
+.newsItem .description a {
+  color: var(--color-primary);
+}
+
+.newsItem .description a:hover {
+  color: #003056;
+}
