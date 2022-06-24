@@ -42,7 +42,7 @@
   width: fit-content !important;
   position: absolute;
   top: 50%;
-  left: -40px;
+  left: -60px;
   transform: translateY(-50%);
 }
 
@@ -50,7 +50,7 @@
   width: fit-content !important;
   position: absolute;
   top: 50%;
-  right: -20px;
+  right: -40px;
 
   transform: translateY(-50%);
 }
