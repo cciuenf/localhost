@@ -1,0 +1,13 @@
+.container {
+    max-width: 600px;
+    margin: 15px 0;
+}
+
+.imgContainer{
+    max-width: 200px;
+    min-width: 200px; 
+    @media screen and (max-width: 815px) {
+        width: 100%;
+        height: 100%; 
+    } 
+}

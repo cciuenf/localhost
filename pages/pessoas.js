@@ -3,30 +3,39 @@ import { Layout, Section, Info, TeacherCard } from "../components";
 import { api } from "../services/api";
 
 const Pessoas = (props) => {
-  const sections = props.sections.data.map((section) => section.attributes);
-
+  const teachers = props.sections.data[0].attributes.component[0].teachers.data;
+  console.log("teachers.attributes", teachers)
   return (
     <Layout seo={props.seo}>
-      <Section mt="30px" title={sections[0].title}>
-        <TeacherCard />
+      <Section mt="30px" title="Professores">
+        {teachers.map(element => (
+          <TeacherCard
+            key={element.id}
+            info={element.attributes}
+          />
+        )
+        )}
       </Section>
       <Section title={"Administração"}></Section>
     </Layout>
   );
 };
 
+
 export const getStaticProps = async () => {
   const {
     data: {
       data: { attributes: page },
     },
-  } = await api.get("/pages/4?populate=seo.meta_tags,sections");
+  } = await api.get(
+    "/pages/4?populate=seo.meta_tags,sections.component.teachers.image"
+  );
 
   return {
     props: {
       ...page,
     },
-    revalidate: 60 * 60, // 60 minutes
+    revalidate: 15 * 60, // 15 minutes
   };
 };
 

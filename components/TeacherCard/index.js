@@ -1,22 +1,25 @@
 import React from "react";
-import Image from "next/image";
+import s from "./TeacherCard.module.css"
 
-export const TeacherCard = () => {
+export const TeacherCard = (props) => {
+  console.log("props:", props.info)
+
   return (
-    <div className="card card-side bg-base-100 shadow-xl">
-      <figure>
-        <Image
-          src="https://api.lorem.space/image/movie?w=200&h=280"
-          alt="Movie"
-          width={200}
-          height={280}
+    <div className={`card card-side bg-base-100 shadow-xl ${s.container}`}>
+      <figure className={s.imgContainer}>
+        <img
+          src={props.info.image.data.attributes.url}
+          alt={props.info.name}
+          style={{ width: "100%", height: "100%" }}
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">New movie is released!</h2>
-        <p>Click the button to watch on Jetflix app.</p>
+        <h2 className="card-title">{props.info.name}</h2>
+        <h3>{props.info.subtitle}</h3>
+        <p>{props.info.graduation}</p>
+        <p>{props.info.email}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Watch</button>
+          <a className="btn btn-primary" target="_blank" href={props.info.lattes_url}>Lattes</a>
         </div>
       </div>
     </div>
