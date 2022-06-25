@@ -9,3 +9,4 @@ export * from "./News";
 export * from "./Supporters";
 export * from "./TeacherCard";
 export * from "./Document";
+export * from "./Administration";
