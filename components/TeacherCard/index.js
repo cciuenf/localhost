@@ -2,8 +2,6 @@ import React from "react";
 import s from "./TeacherCard.module.css"
 
 export const TeacherCard = (props) => {
-  console.log("props:", props.info)
-
   return (
     <div className={`card card-side bg-base-100 shadow-xl ${s.container}`}>
       <figure className={s.imgContainer}>

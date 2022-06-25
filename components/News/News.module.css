@@ -1,8 +1,8 @@
 .wrapper {
   margin: 0px auto;
-  width: 300px;
-  height: fit-content;
-  padding: 8px;
+  width: 350px;
+  min-height: 630px;
+  padding: 15px;
   border: 1px solid rgba(90, 88, 88, 0.39);
   word-wrap: break-word;
 }

@@ -4,7 +4,6 @@ import { api } from "../services/api";
 
 const Pessoas = (props) => {
   const teachers = props.sections.data[0].attributes.component[0].teachers.data;
-  console.log("teachers.attributes", teachers)
   return (
     <Layout seo={props.seo}>
       <Section mt="30px" title="Professores">
