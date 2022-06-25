@@ -1,15 +1,19 @@
 import React from "react";
-import s from "./TeacherCard.module.css"
+import Image from "next/image";
+
+import s from "./TeacherCard.module.css";
 
 export const TeacherCard = (props) => {
   return (
     <>
       <div className={s.wrapper}>
         <figure className={s.figure}>
-          <img
+          <Image
             className={s.img}
             src={props.info.image.data.attributes.url}
             alt={props.info.name}
+            width={300}
+            height={320}
           />
         </figure>
         <div className={s.body}>
@@ -18,7 +22,14 @@ export const TeacherCard = (props) => {
           <p>{props.info.graduation}</p>
           <p>{props.info.email}</p>
           <div className="card-actions justify-end">
-            <a className="btn btn-primary" target="_blank" href={props.info.lattes_url}>Lattes</a>
+            <a
+              className="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.info.lattes_url}
+            >
+              Lattes
+            </a>
           </div>
         </div>
       </div>
