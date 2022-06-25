@@ -10,11 +10,7 @@ const Documentos = (props) => {
           <Document
             key={index}
             title={document.title}
-            urlDownloadAll={"url de download todos os anexos"}
-            attachments={[
-              { title: "Titulo", url: "url" },
-              { title: "Titulo", url: "url" },
-            ]}
+            attachments={document.attachments}
           >
             {document.description}
           </Document>
@@ -33,7 +29,7 @@ export const getStaticProps = async () => {
 
   const {
     data: { data },
-  } = await api.get("/documents?populate=attachments");
+  } = await api.get("/documents?populate=attachments.file");
 
   const documents = data.map((document) => document.attributes);
 
