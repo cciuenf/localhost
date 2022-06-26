@@ -17,14 +17,11 @@
       "required": true
     },
     "description": {
-      "type": "text"
+      "type": "richtext"
     },
     "component": {
       "type": "dynamiczone",
-      "components": [
-        "gallery.gallery",
-        "supporters.apoiadores"
-      ],
+      "components": ["gallery.gallery", "supporters.apoiadores"],
       "required": true
     }
   }

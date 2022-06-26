@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "teachers_pages",
+  "info": {
+    "singularName": "teachers-page",
+    "pluralName": "teachers-pages",
+    "displayName": "Página Professores",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page"
+    }
+  }
+}
