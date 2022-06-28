@@ -1,5 +1,9 @@
 .text {
-    text-align: justify;
-    text-indent: 3em;
-    margin-bottom: 10px;
+  text-align: justify;
+  text-indent: 3em;
+  margin-bottom: 10px;
+}
+
+.text p {
+  margin-bottom: 10px;
 }

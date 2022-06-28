@@ -30,6 +30,14 @@ export const TeacherCard = (props) => {
             >
               Lattes
             </a>
+            <a
+              className="btn btn-outline btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.info.lattes_url}
+            >
+              Website
+            </a>
           </div>
         </div>
       </div>
