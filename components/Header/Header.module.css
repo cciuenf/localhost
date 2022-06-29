@@ -40,5 +40,5 @@
 }
 
 .nav .dropdown_link {
-  @apply text-black;
+  @apply text-black text-center;
 }

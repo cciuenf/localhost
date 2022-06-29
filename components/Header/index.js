@@ -1,10 +1,10 @@
 import React from "react";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import { CaretDown } from "phosphor-react";
 
 import s from "./Header.module.css";
-import Link from "next/link";
 
 export const Header = () => {
   const [clientWindowHeight, setClientWindowHeight] = useState("");
@@ -185,29 +185,53 @@ export const Header = () => {
               </ul>
             </li>
             <li className="dropdown dropdown-end dropdown-hover">
-              <Link href="/links-uteis">
-                <a href="javascript:void(0)">
-                  Links Úteis
-                  <CaretDown />
-                </a>
-              </Link>
+              <a href="javascript:void(0)">
+                Links Úteis
+                <CaretDown />
+              </a>
               <ul
                 tabIndex="0"
                 className="menu dropdown-content p-1 shadow bg-base-100 rounded-box w-52 mt-0"
               >
                 <li>
-                  <Link href="/links-uteis">
-                    <a className={s.dropdown_link} href="javascript:void(0)">
-                      Item 1
-                    </a>
-                  </Link>
+                  <a
+                    className={s.dropdown_link}
+                    href="https://annabelltamariz.typeform.com/to/BndEz5?typeform-source=cc.uenf.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Avaliação dos Alunos
+                  </a>
                 </li>
-                <li href="">
-                  <Link href="/links-uteis">
-                    <a className={s.dropdown_link} href="javascript:void(0)">
-                      Item 2
-                    </a>
-                  </Link>
+                <li>
+                  <a
+                    className={s.dropdown_link}
+                    href="https://annabelltamariz.typeform.com/to/NVj4yr?typeform-source=cc.uenf.br"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Avaliação dos Professores
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className={s.dropdown_link}
+                    href="https://academico.uenf.br/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Sistema Acadêmico
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className={s.dropdown_link}
+                    href="http://www.scti.uenf.br/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    SCTI
+                  </a>
                 </li>
               </ul>
             </li>
