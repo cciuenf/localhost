@@ -18,12 +18,12 @@ export const TeacherCard = (props) => {
         </figure>
         <div className={s.body}>
           <h2 className={s.name}>{props.info.name}</h2>
-          <h3>{props.info.subtitle}</h3>
-          <p>{props.info.graduation}</p>
+          <p style={{ textAlign: "justify" }}>{props.info.graduation}</p>
+          <h3>Área de pesquisa: {props.info.study_area}</h3>
           <p>{props.info.email}</p>
           <div className="card-actions justify-end">
             <a
-              className="btn btn-primary"
+              className="btn btn-outline btn-primary hover:white"
               target="_blank"
               rel="noopener noreferrer"
               href={props.info.lattes_url}
@@ -31,12 +31,10 @@ export const TeacherCard = (props) => {
               Lattes
             </a>
             <a
-              className="btn btn-outline btn-primary"
-              target="_blank"
-              rel="noopener noreferrer"
-              href={props.info.lattes_url}
+              className="btn btn-outline btn-primary hover:text-white"
+              href={`/${props.info.website_url}`}
             >
-              Website
+              Página Pessoal
             </a>
           </div>
         </div>
