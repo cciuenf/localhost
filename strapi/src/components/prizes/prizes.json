@@ -1,7 +1,8 @@
 {
   "collectionName": "components_prizes_prizes",
   "info": {
-    "displayName": "Prizes"
+    "displayName": "Prêmios",
+    "description": ""
   },
   "options": {},
   "attributes": {

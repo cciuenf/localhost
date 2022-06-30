@@ -23,12 +23,7 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+      "allowedTypes": ["images", "files", "videos", "audios"]
     },
     "graduation": {
       "type": "string"
@@ -55,12 +50,17 @@
     "short_bio": {
       "type": "richtext"
     },
+    "research_areas": {
+      "type": "text"
+    },
+    "subjects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::subject.subject"
+    },
     "misc": {
       "type": "dynamiczone",
-      "components": [
-        "carousel.carousel",
-        "prizes.prizes"
-      ]
+      "components": ["carousel.carousel", "prizes.prizes"]
     }
   }
 }
