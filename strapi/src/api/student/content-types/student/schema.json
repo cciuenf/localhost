@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "singularName": "student",
+    "pluralName": "students",
+    "displayName": "Discente",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "entry_year": {
+      "type": "integer"
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
