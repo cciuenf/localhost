@@ -51,6 +51,16 @@
     },
     "website_url": {
       "type": "string"
+    },
+    "short_bio": {
+      "type": "richtext"
+    },
+    "misc": {
+      "type": "dynamiczone",
+      "components": [
+        "carousel.carousel",
+        "prizes.prizes"
+      ]
     }
   }
 }

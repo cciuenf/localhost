@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_prizes_prizes",
+  "info": {
+    "displayName": "Prizes"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
