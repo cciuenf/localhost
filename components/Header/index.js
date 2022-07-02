@@ -171,14 +171,22 @@ export const Header = () => {
                 <li>
                   <Link href="/producao">
                     <a className={s.dropdown_link} href="javascript:void(0)">
-                      Item 1
+                      Monografias
                     </a>
                   </Link>
                 </li>
                 <li href="">
                   <Link href="/producao">
                     <a className={s.dropdown_link} href="javascript:void(0)">
-                      Item 2
+                      Artigos
+                    </a>
+                  </Link>
+                </li>
+
+                <li href="">
+                  <Link href="/producao">
+                    <a className={s.dropdown_link} href="javascript:void(0)">
+                      Projetos
                     </a>
                   </Link>
                 </li>

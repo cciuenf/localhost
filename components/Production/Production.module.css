@@ -1,61 +1,118 @@
 .wrapper {
-    margin: 40px 0px;
-    padding: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  margin: 40px 0px;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1170px;
+  background-color: #f7f7f9;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-top: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 16px 10px 0 10px;
+  gap: 16px;
+}
+
+.authors {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.authors address:after {
+  content: ",";
+}
+
+.authors address:last-child:after {
+  content: "";
 }
 
 .content {
-    width: 1170px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding: 1.25rem;
-    gap: 16px;
-    border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .content h2 {
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.1;
-    color: #424242;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #424242;
 }
 
 .content p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .content address {
-    font-style: 16px;
-    font-size: 0.9rem;
-    line-height: 1.1;
-    color: #777;
+  font-style: 16px;
+  font-size: 0.9rem;
+  line-height: 1.1;
+  color: #777;
+}
+
+.notfound {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  gap: 16px;
+}
+
+.notfound svg {
+  font-size: 180px;
+  color: #424242;
+}
+
+.notfound h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  color: #424242;
 }
 
 @media (max-width: 1200px) {
-    .content {
-        width: 900px;
-    }
+  .container {
+    width: 900px;
+  }
 }
 
 @media (max-width: 992px) {
-    .content {
-        width: 800px;
-    }
+  .container {
+    width: 800px;
+  }
 }
 
-@media (max-width: 810px) { 
-    .content {
-        width: 510px;
-    }
-
+@media (max-width: 810px) {
+  .container {
+    width: 510px;
+  }
+  .header {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 500px) {
-    .content {
-        width: 370px;
-    }
+  .container {
+    width: 370px;
+  }
 }
