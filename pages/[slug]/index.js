@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Layout, Production, Tabs } from "../../components/";
 import { api } from "../../services/api";
 
@@ -83,13 +83,17 @@ const Professor = (props) => {
         <Tabs title="Produções">
           {props.productions.length > 0 &&
             props.productions.map((production) => {
+              const production_html = {
+                __html: production.attributes.abstract,
+              };
+
               return (
                 <Production
                   key={production.id}
                   title={production.attributes.title}
                   authors={production.attributes.authors.data}
                 >
-                  {production.attributes.abstract}
+                  <div dangerouslySetInnerHTML={production_html}></div>
                 </Production>
               );
             })}
