@@ -5,7 +5,7 @@ import { api } from "../services/api";
 const Documentos = (props) => {
   return (
     <Layout seo={props.seo}>
-      <Section title={props.title}>
+      <Section mt="30px" title={props.title}>
         {props.documents.map((document, index) => (
           <Document
             key={index}

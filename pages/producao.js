@@ -62,7 +62,7 @@ const Producao = (props) => {
 
   return (
     <Layout seo={props.seo}>
-      <Section title={props.title}>
+      <Section mt="30px" title={props.title}>
         <div className={s.container}>
           <div className={s.header}>
             <div className="relative flex-1">
