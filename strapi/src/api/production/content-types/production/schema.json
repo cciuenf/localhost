@@ -20,7 +20,7 @@
       "type": "string"
     },
     "abstract": {
-      "type": "text"
+      "type": "richtext"
     },
     "url": {
       "type": "string"
