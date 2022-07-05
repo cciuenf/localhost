@@ -6,7 +6,7 @@ export const Tabs = ({ children, title }) => {
     <section className={s.wrapper}>
       <div className={s.container}>
         <div className={s.header}>
-          <h2>{title}</h2>
+          <h2 className={s.title}>{title}</h2>
         </div>
 
         <div className={s.content}>
