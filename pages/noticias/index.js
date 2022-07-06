@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Router from "next/router";
-import { Layout } from "../../components/";
+import { Layout, Section } from "../../components/";
 import { api } from "../../services/api";
 import { Calendar, Users } from "phosphor-react";
 
@@ -10,8 +10,8 @@ import s from "../../styles/News.module.css";
 const Noticias = (props) => {
   return (
     <Layout>
-      <div className={"wrapper " + s.newsContainer}>
-        <h1>Página {props.page}</h1>
+      <Section title="Notícias">
+        <h1 className={s.pageTitle}>Página {props.page}</h1>
 
         {props.articles.length === 0 && (
           <div className={s.noArticles}>
@@ -31,7 +31,11 @@ const Noticias = (props) => {
 
             return (
               <li className={s.newsItem} key={article.id}>
-                <h2>{article.attributes.title}</h2>
+                <Link href={`/noticias/${article.attributes.slug}`}>
+                  <a>
+                    <h2>{article.attributes.title}</h2>
+                  </a>
+                </Link>
                 <div className={s.meta}>
                   <p className={s.info}>
                     <Users />
@@ -78,7 +82,7 @@ const Noticias = (props) => {
             »
           </button>
         </div>
-      </div>
+      </Section>
     </Layout>
   );
 };

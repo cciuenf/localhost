@@ -11,7 +11,7 @@
   min-height: calc(100vh - 135px - 112px);
 }
 
-.newsContainer h1 {
+.pageTitle {
   font-size: 1.5rem;
   font-weight: 700;
 }
