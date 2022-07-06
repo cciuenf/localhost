@@ -12,3 +12,4 @@ export * from "./Document";
 export * from "./Administration";
 export * from "./Tabs";
 export * from "./Production";
+export * from "./DeveloperCard";

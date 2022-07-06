@@ -2,7 +2,7 @@ import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 
-export const Carousel = ({ items }) => {
+export const Carousel = ({ items, responsive }) => {
   return (
     <>
       <AliceCarousel
@@ -10,11 +10,13 @@ export const Carousel = ({ items }) => {
         items={items}
         disableDotsControls
         paddingLeft="100px"
-        responsive={{
-          0: { items: 1 },
-          960: { items: 2 },
-          1024: { items: 3 },
-        }}
+        responsive={
+          responsive || {
+            0: { items: 1 },
+            960: { items: 2 },
+            1024: { items: 3 },
+          }
+        }
       />
     </>
   );
