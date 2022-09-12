@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "description": "Página de apresentação do curso de Ciência da Computação - UENF",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "cc.uenf",
+  "orientation": "any",
+  "scope": "/",
+  "lang": "pt_BR",
+  "short_name": "Ciência da Computação UENF",
+  "start_url": "/",
+  "theme_color": "#01579b",
+  "icons": [
+    {
+      "src": "images/142x142.png",
+      "type": "image/png",
+      "sizes": "142x142"
+    },
+    {
+      "src": "images/1436x882.png",
+      "type": "image/png",
+      "sizes": "1436x882"
+    }
+  ]
+}
